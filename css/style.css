@@ -9864,3 +9864,18 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
   list-style-type: none;
 }
+.header-banner {
+  background-image: url('img/about-header.jpg'); /* Change to your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.header-banner {
+  background-image: url('img/yellow.jpg'); /* Change to your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  width: 100%;
+}
