@@ -9885,3 +9885,8 @@ footer {
   left: 0;
   z-index: 1000;
 }
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
