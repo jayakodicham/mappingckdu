@@ -95,7 +95,7 @@
                 position: relative;
                 height: 90vh;
                 width: 100%;
-                z-index: 1000;
+                z-index: 100;
                 #map 
             }
         </style>
@@ -113,14 +113,14 @@
             <div id="map"></div>
             <script>
                 var map = L.map('map').setView([7.620822326173849, 80.6348800369385], 8);
-                baseLayer = L.tileLayer('https://api.maptiler.com/maps/topo-v2/{z}/{x}/{y}.png?key=9ZlnxkRt2oS8TwA1JdFu', {
+                baseLayer = L.tileLayer('https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=9ZlnxkRt2oS8TwA1JdFu', {
                     attribution: '<a href="https://urldefense.com/v3/__https://www.maptiler.com/copyright/__;!!HXCxUKc!yrj02Es_bfLohnOs-7AsYsKI8APsChfEDFGn2rfR5berko1KrewYCxgRcAoHDkq_-wz793PDA1INFjnenA$" target="_blank">&copy; MapTiler</a> <a href="https://urldefense.com/v3/__https://www.openstreetmap.org/copyright__;!!HXCxUKc!yrj02Es_bfLohnOs-7AsYsKI8APsChfEDFGn2rfR5berko1KrewYCxgRcAoHDkq_-wz793PDA1JDxvgR_g$" target="_blank">&copy; OpenStreetMap contributors</a>'
                 });
                 
                 // Custom Marker 
                 var iconOptions = {
-                    iconUrl: 'img/black.png',
-                    iconSize: [40, 55]
+                    iconUrl: 'img/icon2.png',
+                    iconSize: [60,100]
     
                 }
                 var customIcon = L.icon(iconOptions);
@@ -129,8 +129,8 @@
                 }
     
                 var iconOptions = {
-                    iconUrl: 'img/houseicon.png',
-                    iconSize: [50, 55]
+                    iconUrl: 'img/icon.png',
+                    iconSize: [60, 100]
                 }
     
                 var customIcon = L.icon(iconOptions);
