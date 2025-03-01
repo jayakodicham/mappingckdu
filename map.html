@@ -140,16 +140,21 @@
     
     
                 //Dams
-                var Polgolla = L.marker([7.0608894734134635, 80.59689192812621], 
-                markersOptions)
+                var Polgolla = L.marker([7.0608894734134635, 80.59689192812621], markersOptions)
+                .bindPopup(`
+                <p><strong>The Polgolla Dam</strong></p>
+                <p>The Polgolla: The Polgolla dam is a manmade structure built across the river to increase the depth of water and to divert its flow towards the hydroelectric power station at Ukuwela. Technically, a construction of this nature is known as a “Barrage”, but, most often it is erroneously referred to as a Dam. The opening of the underground tunnel or penstock is located near the Katugasthota – Madawela road just before the Uyanwatte junction. The power station at Ukuwela consists of two 20 Mega Watt hydroelectric generators that were commissioned in July 1976. (Source: Sunday Observer)</p>
+                <img src="./img/Polgolla.jpeg" style="width: 300px">
+                `);
+
+                var victoria = L.marker([7.24157111500113, 80.78509992773945], markersOptions)
                 .bindPopup
-                ('<p>The Polgolla: The Polgolla dam is a manmade structure built across the river to increase the depth of water and to divert its flow towards the hydroelectric power station at Ukuwela. Technically, a construction of this nature is known as a â€œBarrageâ€, but, most often it is erroneously referred to as a Dam. The opening of the underground tunnel or penstock is located near the Katugasthota â€“ Madawela road just before the Uyanwatte junction. The power station at Ukuwela consists of two 20 Mega Watt hydroelectric generators that were commissioned in July 1976.(Source: Sunday Observer)</p><img src = "./img/Polgolla.jpeg" style = "width: 300px">');
-                var victoria = L.marker([7.24157111500113, 80.78509992773945], markersOptions).bindPopup('<p>Victoria Dam: The dam generates power from three 67 MW turbines, with a total installed capacity to 201 MW, making it the second largest hydroelectric power station in Sri Lanka. Construction on the dam began in August 1979 and was ceremonially completed in February 1985.</p><img src = "./img/victoriadam.jpeg" style = "width: 300px">');
+                ('<p>Victoria Dam: The dam generates power from three 67 MW turbines, with a total installed capacity to 201 MW, making it the second largest hydroelectric power station in Sri Lanka. Construction on the dam began in August 1979 and was ceremonially completed in February 1985.</p><img src = "./img/victoriadam.jpeg" style = "width: 300px">');
                 var Rantembe = L.marker([7.199882636366756, 80.94961807260941], markersOptions).bindPopup('<p>Rantembe Dam: The dam generates power from three 67 MW turbines, with a total installed capacity to 201 MW, making it the second largest hydroelectric power station in Sri Lanka. Construction on the dam began in August 1979 and was ceremonially completed in February 1985.</p><img src = "./img/Rantembe.jpeg" style = "width: 300px">');
                 var Randenigala = L.marker([7.200214573509942, 80.92504223101183], markersOptions).bindPopup('<p>Randenigala Dam: The dam generates power from three 67 MW turbines, with a total installed capacity to 201 MW, making it the second largest hydroelectric power station in Sri Lanka. Construction on the dam began in August 1979 and was ceremonially completed in February 1985.</p><img src = "./img/randenigala.jpg" style = "width: 300px">');
                 var Maduruoya = L.marker([7.6483719015206715, 81.21445236815768], markersOptions).bindPopup('<p>Maduruoya Dam: The dam generates power from three 67 MW turbines, with a total installed capacity to 201 MW, making it the second largest hydroelectric power station in Sri Lanka. Construction on the dam began in August 1979 and was ceremonially completed in February 1985.</p><img src = "./img/maduruoya.jpeg" style = "width: 300px">');
                 var Moragahakanda = L.marker([7.6993000717719555, 80.77155557211229], markersOptions).bindPopup('<p>Moragahakanda Dam: The dam generates power from three 67 MW turbines, with a total installed capacity to 201 MW, making it the second largest hydroelectric power station in Sri Lanka. Construction on the dam began in August 1979 and was ceremonially completed in February 1985.</p><img src = "./img/moragahakanda.jpeg" style = "width: 300px">');
-    
+                
                 // group dams 
     
                 var dams = L.markerClusterGroup();
