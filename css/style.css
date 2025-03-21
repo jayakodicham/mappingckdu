@@ -10306,5 +10306,30 @@ footer {
   height: 45px;
   }
   }
-  
+  .image-container {
+    display: flex; /* Aligns the images side by side */
+    justify-content: center; /* Centers images horizontally */
+    align-items: center; /* Centers images vertically */
+}
+
+.logo-image {
+    width: 250px; /* Adjust this width to match the size of the first image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 250px; /* Set the width of the images to match the first image */
+  height: auto; /* Keep the aspect ratio */
+}
+
+.logo-image:first-child {
+  margin-right: 20px; /* Adds space between the images */
+}
+
   
