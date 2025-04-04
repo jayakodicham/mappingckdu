@@ -205,6 +205,24 @@
                 baseLayer.addTo(map);
     
             </script>
+
+            <script>
+    setTimeout(() => {
+        let labels = document.querySelectorAll(".leaflet-control-layers-overlays label");
+
+        labels.forEach(label => {
+            if (label.innerText.includes("Newspaper Articles on CKDu")) {
+                label.style.color = "orange";
+                label.style.fontWeight = "bold";
+            } 
+            if (label.innerText.includes("Research Papers on CKDu")) {
+                label.style.color = "purple";
+                label.style.fontWeight = "bold";
+            }
+        });
+    }, 500);
+</script>
+            
     
         </body>
     
