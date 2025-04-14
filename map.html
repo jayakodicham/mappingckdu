@@ -140,13 +140,62 @@
     
     
                 //Dams
-                var Polgolla = L.marker([8.537344459277014, 80.49815518277957], markersOptions)
+                var rp1 = L.marker([8.537344459277014, 80.49815518277957], markersOptions)
                 .bindPopup(`
-                <p><strong>Title: Structural violence and chronic kidney disease of unknown etiology in Sri Lanka</strong></p>
-                <p>Authors: M W Amarasiri de Silva, Steven M Albert, J M K B Jayasekara</p>
-                <p>Year:2017</p>
-                <p> Link: <a href="https://doi.org/10.1016/j.socscimed.2017.02.016" target="_blank">View Paper</a></p>
+                <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4;">
+                <p style="margin: 0 0 4px; font-weight: bold; font-size: 13px;">
+                Structural Violence and Chronic Kidney Disease of Unknown Etiology in Sri Lanka
+                </p>
+                <p style="margin: 0 0 4px;">
+                <strong>Authors:</strong> M. W. Amarasiri de Silva, Steven M. Albert, J. M. K. B. Jayasekara
+                </p>
+                <p style="margin: 0 0 4px;">
+                <strong>Year:</strong> 2017
+                </p>
+                <a href="https://doi.org/10.1016/j.socscimed.2017.02.016" target="_blank" 
+               style="color: #007bff; text-decoration: none;">
+               📄 View Paper
+                </a>
+                </div>
                 `);
+
+                var rp2 = L.marker([8.933097538140531, 80.81389135403414], markersOptions)
+            .bindPopup(`
+                <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4;">
+                    <p style="margin: 0 0 4px; font-weight: bold; font-size: 13px;">
+                        Tasting toxicity: bodies, perplexity, and the fraught witnessing of environmental risk in Sri Lanka’s dry zone
+                    </p>
+                    <p style="margin: 0 0 4px;">
+                        <strong>Authors:</strong> N. Senanayake
+                    </p>
+                    <p style="margin: 0 0 4px;">
+                        <strong>Year:</strong> 2019
+                    </p>
+                    <a href="https://doi.org/10.1080/0966369X.2019.1693345" target="_blank" 
+                    style="color: #007bff; text-decoration: none;">
+                    📄 View Paper
+                    </a>
+                </div>
+            `);
+
+            var rp3 = L.marker([8.9250424278629, 80.81459977740234], markersOptions)
+            .bindPopup(`
+                <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4;">
+                    <p style="margin: 0 0 4px; font-weight: bold; font-size: 13px;">
+                    “We Spray So We Can Live”: Agrochemical Kinship, Mystery Kidney Disease, and Struggles for Health in Dry Zone Sri Lanka
+                    </p>
+                    <p style="margin: 0 0 4px;">
+                        <strong>Authors:</strong> N. Senanayake
+                    </p>
+                    <p style="margin: 0 0 4px;">
+                        <strong>Year:</strong> 2017
+                    </p>
+                    <a href="https://doi.org/10.1016/j.socscimed.2017.02.016" target="_blank" 
+                    style="color: #007bff; text-decoration: none;">
+                    📄 View Paper
+                    </a>
+                </div>
+            `);
 
                 var victoria = L.marker([7.24157111500113, 80.78509992773945], markersOptions)
                 .bindPopup
@@ -159,7 +208,7 @@
                 // group dams 
     
                 var dams = L.markerClusterGroup();
-                dams.addLayers([Polgolla, victoria, Rantembe, Moragahakanda, Maduruoya, Randenigala]);
+                dams.addLayers([rp1, rp2, rp3, Moragahakanda, Maduruoya, Randenigala]);
     
                 // towns
                 var Dehiattakandiya = L.marker([7.671482425543524, 81.04696078421763], markerOptions).bindPopup('<p>Dehiattakandiya is a town area that belongs the Mahaweli System C</p>');
