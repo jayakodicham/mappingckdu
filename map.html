@@ -422,10 +422,51 @@
                     </div>
                 `);
 
+                //research papers from nicaragua
+                var rp16 = L.marker([13.003755343304459, -84.6519185678835], markersOptions)
+                .bindPopup(`
+                    <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4;">
+                        <p style="margin: 0 0 4px; font-weight: bold; font-size: 13px;">
+                        Ethnography in a grievance: Documentary mechanisms in Nicaragua’s chronic kidney disease epidemic
+                        </p>
+                        <p style="margin: 0 0 4px;">
+                            <strong>Authors:</strong> Alex Nading
+                        </p>
+                        <p style="margin: 0 0 4px;">
+                            <strong>Year:</strong> 2019
+                        </p>
+                        <a href="https://www.medanthrotheory.org/mat/article/view/4928" target="_blank" 
+                        style="color: #007bff; text-decoration: none;">
+                        📄 View Paper
+                        </a>
+                    </div>
+                `);
+                
+                var rp17 = L.marker([23.85261395070732, -102.48650877725377], markersOptions)
+                .bindPopup(`
+                    <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4;">
+                        <p style="margin: 0 0 4px; font-weight: bold; font-size: 13px;">
+                        Describing chronic kidney disease of unknown origin: anthropological noticing and the ‘residual’ category
+                        </p>
+                        <p style="margin: 0 0 4px;">
+                            <strong>Authors:</strong> Ciara Kierans & Cesar Padilla-Altamira
+                        </p>
+                        <p style="margin: 0 0 4px;">
+                            <strong>Year:</strong> 2020
+                        </p>
+                        <a href="https://doi.org/10.1177/1468794120972605" target="_blank" 
+                        style="color: #007bff; text-decoration: none;">
+                        📄 View Paper
+                        </a>
+                    </div>
+                `);
+
+
+
                 // group researchpapers
     
                 var research = L.markerClusterGroup();
-                research.addLayers([rp1, rp2, rp3, rp4, rp5, rp6, rp7]);
+                research.addLayers([rp1, rp2, rp3, rp4, rp5, rp6, rp7, rp16, rp17]);
     
                 // newspaper articles sri lanka
 
