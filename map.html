@@ -441,6 +441,26 @@
                         </a>
                     </div>
                 `);
+
+                var rp19 = L.marker([13.003755343304459, -84.6519185678835], markersOptions)
+                .bindPopup(`
+                    <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4;">
+                        <p style="margin: 0 0 4px; font-weight: bold; font-size: 13px;">
+                        The Plantation as Hotspot: Capital, Science, Labour, and the Earthly Limits of Global Health
+                        </p>
+                        <p style="margin: 0 0 4px;">
+                            <strong>Authors:</strong> Alex Nading
+                        </p>
+                        <p style="margin: 0 0 4px;">
+                            <strong>Year:</strong> 2022
+                        </p>
+                        <a href="https://www.medanthrotheory.org/mat/article/view/6928" target="_blank" 
+                        style="color: #007bff; text-decoration: none;">
+                        📄 View Paper
+                        </a>
+                    </div>
+                `);
+
                 //mexico
                 
                 var rp17 = L.marker([23.85261395070732, -102.48650877725377], markersOptions)
@@ -485,7 +505,7 @@
                 // group researchpapers
     
                 var research = L.markerClusterGroup();
-                research.addLayers([rp1, rp2, rp3, rp4, rp5, rp6, rp7, rp8, rp9, rp10, rp11, rp12, rp13, rp14, rp15, rp16, rp17, rp18]);
+                research.addLayers([rp1, rp2, rp3, rp4, rp5, rp6, rp7, rp8, rp9, rp10, rp11, rp12, rp13, rp14, rp15, rp16, rp17, rp18, rp19]);
     
                 // newspaper articles sri lanka
 
@@ -513,11 +533,11 @@
                     </div>
                 `);
 
-                var news4 = L.marker([8.233623888433709, 79.76492338953328], markersOptions)
+                var news4 = L.marker([8.92962060629145, 80.8138715992254], markersOptions)
                 .bindPopup(`
                     <div>
-                        <p>The Killer Stalking Sri Lanka’s Men: Climate change and contaminated water have combined to create an epidemic of kidney disease.</p>
-                        <p>The New York Times <p><a href="https://www.nytimes.com/2024/07/08/health/sri-lanka-kidney-disease.html" target="_blank"> 📄 Read Full Article </a></p>
+                        <p>රජරට විසි දාහක් මැරූ ආසනික් මිනිමරුවා තවමත් නිදැල්ලේ [The arsenic killer who killed twenty thousand in Rajarata is still at large]</p>
+                        <p>Lankadeepa, October 9, 2022 <p><a href="https://www.lankadeepa.lk/sunday/features/%E0%B6%BB%E0%B6%A2%E0%B6%BB%E0%B6%A7-%E0%B7%80%E0%B7%92%E0%B7%83%E0%B7%92-%E0%B6%AF%E0%B7%8F%E0%B7%84%E0%B6%9A%E0%B7%8A-%E0%B6%B8%E0%B7%90%E0%B6%BB%E0%B7%96-%E0%B6%86%E0%B7%83%E0%B6%B1%E0%B7%92%E0%B6%9A%E0%B7%8A-%E0%B6%B8%E0%B7%92%E0%B6%B1%E0%B7%92%E0%B6%B8%E0%B6%BB%E0%B7%94%E0%B7%80%E0%B7%8F-%E0%B6%AD%E0%B7%80%E0%B6%B8%E0%B6%AD%E0%B7%8A-%E0%B6%B1%E0%B7%92%E0%B6%AF%E0%B7%90%E0%B6%BD%E0%B7%8A%E0%B6%BD%E0%B7%9A/2-103232" target="_blank"> 📄 Read Full Article </a></p>
                     </div>
                 `);
 
@@ -600,7 +620,7 @@
     
             </script>
 
-            <script>
+        <script>
     setTimeout(() => {
         let labels = document.querySelectorAll(".leaflet-control-layers-overlays label");
 
