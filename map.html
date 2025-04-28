@@ -441,6 +441,7 @@
                         </a>
                     </div>
                 `);
+                //mexico
                 
                 var rp17 = L.marker([23.85261395070732, -102.48650877725377], markersOptions)
                 .bindPopup(`
@@ -461,12 +462,31 @@
                     </div>
                 `);
 
+                //Egypt
+                var rp18 = L.marker([26.947915490721233, 29.468751868583414], markersOptions)
+                .bindPopup(`
+                    <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4;">
+                        <p style="margin: 0 0 4px; font-weight: bold; font-size: 13px;">
+                       When the state and your kidneys fail: Political etiologies in an Egyptian dialysis ward
+                        </p>
+                        <p style="margin: 0 0 4px;">
+                            <strong>Authors:</strong> Sherine F. Hamdy
+                        </p>
+                        <p style="margin: 0 0 4px;">
+                            <strong>Year:</strong> 2020
+                        </p>
+                        <a href="https://doi.org/10.1111/j.1548-1425.2008.00098.x" target="_blank" 
+                        style="color: #007bff; text-decoration: none;">
+                        📄 View Paper
+                        </a>
+                    </div>
+                `);
 
 
                 // group researchpapers
     
                 var research = L.markerClusterGroup();
-                research.addLayers([rp1, rp2, rp3, rp4, rp5, rp6, rp7, rp16, rp17]);
+                research.addLayers([rp1, rp2, rp3, rp4, rp5, rp6, rp7, rp16, rp17, rp18]);
     
                 // newspaper articles sri lanka
 
